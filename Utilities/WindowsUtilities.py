@@ -2,12 +2,10 @@ from pywinauto import Application
 
 
 def is_app_existing(app, name):
-    result = False
     for wnd in app.windows():
         if name in wnd.window_text():
-            result = True
-            break
-    return result
+            return True
+    return False
 
 
 def create_app(directory):

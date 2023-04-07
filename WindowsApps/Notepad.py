@@ -11,12 +11,13 @@ class Notepad:
         self.dialog = self.__app.Dialog
 
     def create_new_file(self):
+        self.dialog.set_focus()
         self.dialog.menu_select("File->New")
 
     def save_file(self):
         self.dialog.menu_select("File->Save As")
         self.dialog.child_window(auto_id='1001', control_type="Edit").type_keys(self.__last_saved_file_name)
-        self.dialog.Button15.click()
+        self.dialog.child_window(auto_id='1', control_type="Button").click()
         return self.__last_saved_file_name
 
     def type_text(self, text):
@@ -28,4 +29,4 @@ class Notepad:
     def open_file(self, file_path):
         self.dialog.menu_select('File->Open...')
         self.dialog.child_window(auto_id='1148', control_type="Edit").type_keys(file_path)
-        self.dialog.Button14.click()
+        self.dialog.child_window(auto_id='1', control_type="Button").click().click()
