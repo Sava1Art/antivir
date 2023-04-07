@@ -1,0 +1,4 @@
+.idea/
+*.pyc
+# created by virtualenv automatically
+venv/Lib
