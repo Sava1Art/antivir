@@ -1,0 +1,8 @@
+CHROME_DRIVER_DIRECTORY = 'C:\\Users\\artsa\\PycharmProjects\\antivir\\drivers\\chrome\\chromedriver.exe'
+BROWSER = 'chrome'
+EMAIL = 'email@email.email'
+URL = 'http://127.0.0.1:5000/login/'
+LOGIN = 'test'
+PASS = '1234'
+REGISTRATION_LOGIN = 'test'
+REGISTRATION_PASS = '123qwe'
